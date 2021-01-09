@@ -11,7 +11,7 @@ redirect_from:
 
 Welcome! I am a PhD candidate in Marketing at the Wharton School, University of Pennsylvania. I will be joining the Lee Kong Chian School of Business, Singapore Management University in July, 2021. 
 
-My research interests are quantitative marketing, retailer, product assortments, and subscription programs.
+My research interests are quantitative marketing, retailing, product assortments, and subscription programs.
 
 Here is my [CV](https://www.dropbox.com/s/ujy7djvkhqefzq2/CV_Qi_20210109.pdf?dl=0). 
 

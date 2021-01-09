@@ -3,8 +3,6 @@ layout: archive
 description: "Qi Yu - Ph.D. Candidate in Marketing at Wharton"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 {% include base_path %}

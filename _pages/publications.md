@@ -16,7 +16,7 @@ Job Market Paper
 
 Working Paper
 ------
-[**The Impact of Subscription Programs on Customer Purchases**](https://www.dropbox.com/s/cghi5izjd1u1fac/Subscriptions%2020200130.pdf?dl=0), with Raghuram Iyengar and Young-Hoon Park
+[**The Impact of Subscription Programs on Customer Purchases**](http://ssrn.com/abstract=3529681), with Raghuram Iyengar and Young-Hoon Park
 
 Invited for 3nd round review at *Journal of Marketing Research*
 

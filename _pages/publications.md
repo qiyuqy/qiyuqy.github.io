@@ -24,4 +24,4 @@ Working Paper
 
 Work in Progress
 -----
-**Pricing Strategy Post Assortment Expansion**, with Ron Berman and Eric T. Bradlow
+**Pricing Strategy Post Assortment Expansion** (with Ron Berman and Eric T. Bradlow)

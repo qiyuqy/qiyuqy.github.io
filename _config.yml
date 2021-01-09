@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Qi Yu"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Qi Yu"
 description              : &description "Ph.D. Candidate in Marketing at Wharton"
@@ -225,7 +225,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _portfolio
   - scope:

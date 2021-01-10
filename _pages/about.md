@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-Welcome! I am a PhD candidate in Marketing at the Wharton School, University of Pennsylvania. I will be joining the Lee Kong Chian School of Business, Singapore Management University in July, 2021. 
+Welcome! I am a PhD candidate in Marketing at the Wharton School, University of Pennsylvania. I will be joining the Lee Kong Chian School of Business, Singapore Management University in July 2021. 
 
 My research interests are quantitative marketing, retailing, product assortments, and subscription programs.
 

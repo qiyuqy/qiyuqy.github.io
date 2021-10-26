@@ -9,7 +9,7 @@ author_profile: true
 
 Education
 ------
-   Ph.D. in Marketing, University of Pennsylvania, 2021 (expected)
+   Ph.D. in Marketing, University of Pennsylvania, 2021
 
    M.A. in Economics, Tsinghua University, 2016
 

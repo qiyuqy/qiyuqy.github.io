@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
 name                     : &name "Qi Yu"
-description              : &description "Assistant Professor of Marketing at SMU"
+description              : &description "Assistant Professor of Marketing at Singapore Management University"
 url                      : https://qiyuqy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "qiyuqy/qiyuqy.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Qi Yu"
   avatar           : "headshot2.jpg"
-  bio              : "Ph.D. Candidate in Marketing at Wharton"
+  bio              : "Assistant Professor of Marketing at Singapore Management University"
   location         : #"Location"
   employer         : 
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

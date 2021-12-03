@@ -1,6 +1,6 @@
 ---
 layout: archive
-description: "Qi Yu - Ph.D. Candidate in Marketing at Wharton"
+description: "Qi Yu - Assistant Professor of Marketing at Singapore Management University"
 permalink: /cv/
 author_profile: true
 ---
@@ -41,6 +41,12 @@ Grants, Scholarships and Awards
 Teaching Experience
 ------
 
+**Singapore Management University
+
+   Instructor, Marketing (Undergraduate Core)
+
+   Instructor, Pro-Seminar (PhD Elective)
+   
 **The Wharton School, University of Pennsylvania**
 
    Teaching Assistant, Marketing Research, Fall 2019 (Instructor: Gideon Nave), Spring 2019 (Instructor: Ryan Dew), Spring 2018 (Instructor: Raghuram Iyengar), Fall 2017 (Instructor: Jehoshua Eliashberg)

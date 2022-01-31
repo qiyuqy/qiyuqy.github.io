@@ -12,11 +12,11 @@ author_profile: true
 
 **The Wharton School, University of Pennsylvania**
 
-* TA, Marketing Analytics, 
+* TA, Marketing Analytics, MBA Elective, Spring 2021
 
-* TA, Data and Analysis for Marketing Decisions, Undergraduate, MBA, and Execitive MBA Elective, Fall 2019 , Spring 2019 , Spring 2018 , Fall 2017
+* TA, Data and Analysis for Marketing Decisions, Undergraduate/MBA/Execitive MBA Elective, Fall 2019 , Spring 2019 , Spring 2018 , Fall 2017
 
-* TA, Models for Marketing Strategy, Undergraduate and MBA Elective, Fall 2018, Fall 2017
+* TA, Models for Marketing Strategy, Undergraduate/MBA Elective, Fall 2018, Fall 2017
 
 **Tsinghua University**
 

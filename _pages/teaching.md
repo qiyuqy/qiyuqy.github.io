@@ -6,10 +6,11 @@ author_profile: true
 ---
 **Singapore Management University**
 
-* Instructor, Marketing, Undergraduate Core, Fall 2021
+* Instructor, Marketing, Undergraduate Core, 2021-2022
 
-* Instructor, Pro-Seminar, PhD Elective, Fall 2021
+* Instructor, Pro-Seminar, PhD Elective, 2021
 
+<!---
 **The Wharton School, University of Pennsylvania**
 
 * TA, Marketing Analytics, MBA Elective, Spring 2021
@@ -23,3 +24,5 @@ author_profile: true
 * TA, Principle of Economics, Undergraduate Core, 2013 - 2014
 
 * TA, Managerial Economics, Global MBA Elective, Spring 2016
+
+--->

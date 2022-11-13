@@ -13,6 +13,6 @@ Welcome! I am a Assistant Professor of Marketing at the Lee Kong Chian School of
 
 My research interests are quantitative marketing, retailing, product assortments, and subscription programs.
 
-Here is my [CV](https://www.dropbox.com/s/mlk7mg6deja3gpe/CV_QIYU_20220201_web.pdf?dl=0). 
+Here is my [CV](https://www.dropbox.com/s/nzpjcobna8s8c1b/CV_QIYU_20221113_web.pdf?dl=0). 
 
 

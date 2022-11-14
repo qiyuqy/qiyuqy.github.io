@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-Welcome! I am a Assistant Professor of Marketing at [the Lee Kong Chian School of Business](https://business.smu.edu.sg/business/disciplines/marketing/welcome), Singapore Management University. 
+Welcome! I am an Assistant Professor of Marketing at [the Lee Kong Chian School of Business](https://business.smu.edu.sg/business/disciplines/marketing/welcome), Singapore Management University. 
 
 My research interest lies in quantitative marketing with an emphasis on customer loyalty and online retailing. My most recent works study how subscription programs may reshape customers’ purchase behavior and how customers’ one-stop shopping preferences will affect retailers’ pricing and category management strategy. My research has appeared in _the Journal of Marketing Research_.
 

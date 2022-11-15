@@ -6,9 +6,9 @@ author_profile: true
 ---
 **Singapore Management University**
 
-* Instructor, Marketing, Undergraduate Core, 2021-2022
+* Marketing, Undergraduate Core, 2021-2022
 
-* Instructor, Pro-Seminar, PhD Elective, 2021
+* Pro-Seminar, PhD Elective, 2021
 
 <!---
 **The Wharton School, University of Pennsylvania**

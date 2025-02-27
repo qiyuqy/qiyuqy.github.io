@@ -13,7 +13,7 @@ Subscription programs have become increasingly popular among a wide variety of r
   
 Working Papers and Work in Progress
 ------
-  [**Organic Content, Embargoes, and Quality Obfuscation: Evidence from the Gaming Industry**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5158593) (with Zhe Lin)
+  [**Organic Content, Embargoes, and Quality Obfuscation: Evidence from the Gaming Industry**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5158597) (with Zhe Lin)
   
   [**The Dark Side of Adding a Category: Will Existing Ones "Pay the Price"**]() (with Ron Berman and Eric T. Bradlow)
 

@@ -21,4 +21,6 @@ Working Papers and Work in Progress
   
   **An Affine Subspace Shrinkage Approach to Choice-based Conjoint Estimation** (with Yupeng Chen and Raghu Iyengar)
   
-  **Cross-platform Subscription Programs** (with Meng Li and Gaoyang Cai) 
+  **Cross-platform Subscription Programs** (with Meng Li, Gaoyang Cai, and Zhi Cao) 
+
+  **Consumer Sentiment Analysis from Multi-modal Data** (with Raghu Iyengar)

@@ -86,10 +86,10 @@ author:
   location         : #"Location"
   employer         : 
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            : #qiyu@wharton.upenn.edu
+  googlescholar    : "https://scholar.google.com/citations?user=S7lNGzQAAAAJ&hl=en&inst=14102473421921925766"
+  email            : "qiyu@smu.edu.sg"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://faculty.smu.edu.sg/profile/qi-yu-5846"
   bitbucket        :
   codepen          :
   dribbble         :

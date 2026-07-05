@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "generated_at": "2026-06-24",
+    "is_demo": true,
+    "note": "Illustrative demo data. Replace this file with a live API response of the same shape to make the tracker live. See assets/js/brand-tracker.js.",
+    "voice_types": {
+      "official": {
+        "label": "Official Voice",
+        "description": "How the brand speaks for itself — owned channels, campaigns, and press."
+      },
+      "consumer": {
+        "label": "Consumer Voice",
+        "description": "How real customers talk about the brand — reviews, social chatter, UGC."
+      },
+      "ai": {
+        "label": "AI-Generated Voice",
+        "description": "How AI describes or markets the brand — LLM summaries and AI influencer content."
+      }
+    }
+  },
+  "brands": [
+    {
+      "name": "Nike",
+      "slug": "nike",
+      "emoji": "👟",
+      "category": "Apparel & Footwear",
+      "color": "#111111",
+      "voices": {
+        "official": {
+          "sentiment": "aspirational",
+          "summary": "Motivational, athlete-first, and action-oriented — empowerment as the core promise.",
+          "tone_tags": ["Empowering", "Bold", "Performance", "Inclusive"],
+          "samples": [
+            { "text": "Don't ask if your dreams are crazy. Ask if they're crazy enough.", "source": "Brand campaign", "date": "2026-05-18", "metric": "1.2M reach" },
+            { "text": "Every athlete. Every body. Every move forward. Just Do It.", "source": "Instagram (@nike)", "date": "2026-06-02", "metric": "84K likes" }
+          ]
+        },
+        "consumer": {
+          "sentiment": "positive",
+          "summary": "Customers praise fit and status but flag price and inconsistent sizing.",
+          "tone_tags": ["Loyal", "Hype-driven", "Price-sensitive", "Quality-focused"],
+          "samples": [
+            { "text": "The new Pegasus is the only running shoe my knees actually like.", "source": "Review · r/running", "date": "2026-06-10", "metric": "430 upvotes" },
+            { "text": "Love the drops but $180 for sneakers is getting wild.", "source": "X / Twitter", "date": "2026-06-12", "metric": "2.1K likes" }
+          ]
+        },
+        "ai": {
+          "sentiment": "neutral-positive",
+          "summary": "AI summaries frame Nike as the default premium athletic brand; AI influencers lean lifestyle.",
+          "tone_tags": ["Authoritative", "Lifestyle", "Generic-premium"],
+          "samples": [
+            { "text": "Nike is widely regarded as a leader in athletic footwear, known for innovation and marketing.", "source": "LLM brand summary", "date": "2026-06-20", "metric": "model: generic" },
+            { "text": "Lacing up for a sunrise run — these just hit different. #JustDoIt #ad", "source": "AI influencer post", "date": "2026-06-15", "metric": "synthetic" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Apple",
+      "slug": "apple",
+      "emoji": "🍏",
+      "category": "Consumer Electronics",
+      "color": "#1d1d1f",
+      "voices": {
+        "official": {
+          "sentiment": "confident",
+          "summary": "Minimal, precise, and benefit-led — design and privacy as recurring themes.",
+          "tone_tags": ["Minimal", "Premium", "Privacy", "Polished"],
+          "samples": [
+            { "text": "Privacy. That's iPhone.", "source": "Brand campaign", "date": "2026-04-30", "metric": "3.4M reach" },
+            { "text": "The most powerful chip we've ever built. By a wide margin.", "source": "Keynote / press", "date": "2026-06-09", "metric": "press cycle" }
+          ]
+        },
+        "consumer": {
+          "sentiment": "mixed-positive",
+          "summary": "Ecosystem loyalty is strong; complaints center on price and repairability.",
+          "tone_tags": ["Devoted", "Ecosystem-locked", "Cost-wary", "Design-loving"],
+          "samples": [
+            { "text": "Switched back to iPhone for the cameras alone. No regrets.", "source": "Review · forums", "date": "2026-06-08", "metric": "310 upvotes" },
+            { "text": "Why is the charger still sold separately in 2026??", "source": "X / Twitter", "date": "2026-06-11", "metric": "5.6K likes" }
+          ]
+        },
+        "ai": {
+          "sentiment": "positive",
+          "summary": "AI consistently positions Apple as the benchmark for premium UX and privacy.",
+          "tone_tags": ["Benchmark", "Premium", "Privacy-forward"],
+          "samples": [
+            { "text": "Apple is frequently cited as the gold standard for product design and ecosystem integration.", "source": "LLM brand summary", "date": "2026-06-20", "metric": "model: generic" },
+            { "text": "My whole setup just *talks* to each other. This is the future. #Apple", "source": "AI influencer post", "date": "2026-06-16", "metric": "synthetic" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Coca-Cola",
+      "slug": "coca-cola",
+      "emoji": "🥤",
+      "category": "Beverages",
+      "color": "#f40009",
+      "voices": {
+        "official": {
+          "sentiment": "warm",
+          "summary": "Nostalgic, joyful, and communal — happiness and togetherness as the message.",
+          "tone_tags": ["Joyful", "Nostalgic", "Community", "Timeless"],
+          "samples": [
+            { "text": "Real Magic happens when we come together.", "source": "Brand campaign", "date": "2026-05-22", "metric": "2.0M reach" },
+            { "text": "Taste the feeling — share a Coke this summer.", "source": "Instagram", "date": "2026-06-05", "metric": "61K likes" }
+          ]
+        },
+        "consumer": {
+          "sentiment": "mixed",
+          "summary": "Strong affinity and nostalgia, tempered by health and sugar concerns.",
+          "tone_tags": ["Nostalgic", "Habitual", "Health-conscious", "Divided"],
+          "samples": [
+            { "text": "Nothing beats an ice-cold Coke with pizza. Comfort in a can.", "source": "X / Twitter", "date": "2026-06-09", "metric": "3.3K likes" },
+            { "text": "Trying to quit soda but the cravings are real.", "source": "Review · social", "date": "2026-06-13", "metric": "890 likes" }
+          ]
+        },
+        "ai": {
+          "sentiment": "neutral",
+          "summary": "AI describes Coca-Cola as an iconic marketing case study; AI content leans nostalgic.",
+          "tone_tags": ["Iconic", "Case-study", "Nostalgic"],
+          "samples": [
+            { "text": "Coca-Cola is one of the most recognized brands globally, often studied for emotional branding.", "source": "LLM brand summary", "date": "2026-06-20", "metric": "model: generic" },
+            { "text": "Golden hour + a cold classic = summer, bottled. 🥤 #ShareACoke", "source": "AI influencer post", "date": "2026-06-17", "metric": "synthetic" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "McDonald's",
+      "slug": "mcdonalds",
+      "emoji": "🍟",
+      "category": "Quick Service Restaurants",
+      "color": "#ffc72c",
+      "voices": {
+        "official": {
+          "sentiment": "playful",
+          "summary": "Friendly, value-driven, and culturally fluent — leans into memes and moments.",
+          "tone_tags": ["Playful", "Value", "Accessible", "Culturally-aware"],
+          "samples": [
+            { "text": "i'm lovin' it — still, always.", "source": "Brand campaign", "date": "2026-05-12", "metric": "1.8M reach" },
+            { "text": "You already know what you're ordering. We do too.", "source": "X / Twitter (@McDonalds)", "date": "2026-06-06", "metric": "44K likes" }
+          ]
+        },
+        "consumer": {
+          "sentiment": "mixed",
+          "summary": "Beloved for value and consistency; criticized on health and service speed.",
+          "tone_tags": ["Convenient", "Value", "Quality-skeptical", "Meme-loving"],
+          "samples": [
+            { "text": "McDonald's breakfast is genuinely elite, fight me.", "source": "X / Twitter", "date": "2026-06-10", "metric": "12K likes" },
+            { "text": "The ice cream machine was down. Again.", "source": "Review · Google", "date": "2026-06-12", "metric": "2★" }
+          ]
+        },
+        "ai": {
+          "sentiment": "neutral",
+          "summary": "AI frames McDonald's as the archetypal fast-food brand and operations benchmark.",
+          "tone_tags": ["Archetypal", "Operations", "Accessible"],
+          "samples": [
+            { "text": "McDonald's is often referenced as a model of franchising and supply-chain efficiency.", "source": "LLM brand summary", "date": "2026-06-20", "metric": "model: generic" },
+            { "text": "3am thoughts and a craving only the Golden Arches can fix. 🍟", "source": "AI influencer post", "date": "2026-06-18", "metric": "synthetic" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Starbucks",
+      "slug": "starbucks",
+      "emoji": "☕",
+      "category": "Coffee & Cafes",
+      "color": "#00704a",
+      "voices": {
+        "official": {
+          "sentiment": "warm",
+          "summary": "Cozy, personal, and ritual-focused — the 'third place' and seasonal moments.",
+          "tone_tags": ["Cozy", "Personal", "Seasonal", "Community"],
+          "samples": [
+            { "text": "Your fall ritual is back. Pull up a seat.", "source": "Brand campaign", "date": "2026-05-28", "metric": "1.1M reach" },
+            { "text": "Made just the way you like it, with your name on it.", "source": "Instagram", "date": "2026-06-04", "metric": "39K likes" }
+          ]
+        },
+        "consumer": {
+          "sentiment": "mixed",
+          "summary": "Habit and convenience drive loyalty; price and wait times spark frustration.",
+          "tone_tags": ["Ritual", "Convenient", "Pricey", "Customizable"],
+          "samples": [
+            { "text": "My order is basically my personality at this point.", "source": "X / Twitter", "date": "2026-06-07", "metric": "8.4K likes" },
+            { "text": "$7 for a latte and a 20 min mobile order wait. Make it make sense.", "source": "Review · social", "date": "2026-06-11", "metric": "3.0K likes" }
+          ]
+        },
+        "ai": {
+          "sentiment": "neutral-positive",
+          "summary": "AI casts Starbucks as the loyalty/app-driven coffee benchmark; content is cozy.",
+          "tone_tags": ["Loyalty-driven", "Lifestyle", "Cozy"],
+          "samples": [
+            { "text": "Starbucks is widely cited for its loyalty program and mobile ordering strategy.", "source": "LLM brand summary", "date": "2026-06-20", "metric": "model: generic" },
+            { "text": "Rainy morning, window seat, oat latte in hand. Bliss. ☕ #Starbucks", "source": "AI influencer post", "date": "2026-06-19", "metric": "synthetic" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Tesla",
+      "slug": "tesla",
+      "emoji": "⚡",
+      "category": "Automotive & Energy",
+      "color": "#cc0000",
+      "voices": {
+        "official": {
+          "sentiment": "visionary",
+          "summary": "Mission-driven and future-facing — sustainability and engineering firsts.",
+          "tone_tags": ["Visionary", "Engineering", "Sustainable", "Disruptive"],
+          "samples": [
+            { "text": "Accelerating the world's transition to sustainable energy.", "source": "Brand mission", "date": "2026-04-15", "metric": "mission statement" },
+            { "text": "Full Self-Driving, now smoother than ever. Update rolling out.", "source": "X / Twitter", "date": "2026-06-03", "metric": "120K likes" }
+          ]
+        },
+        "consumer": {
+          "sentiment": "polarized",
+          "summary": "Devoted advocates and vocal critics — product love vs. service and brand controversy.",
+          "tone_tags": ["Polarized", "Tech-forward", "Service-frustrated", "Opinionated"],
+          "samples": [
+            { "text": "Best car I've ever owned. The software updates feel like magic.", "source": "Review · forums", "date": "2026-06-09", "metric": "520 upvotes" },
+            { "text": "Love the car, hate the service center experience.", "source": "X / Twitter", "date": "2026-06-12", "metric": "6.7K likes" }
+          ]
+        },
+        "ai": {
+          "sentiment": "neutral",
+          "summary": "AI summaries weigh innovation against controversy; content leans tech-utopian.",
+          "tone_tags": ["Innovation", "Controversy-aware", "Tech-utopian"],
+          "samples": [
+            { "text": "Tesla is frequently discussed for EV innovation alongside debates over leadership and service.", "source": "LLM brand summary", "date": "2026-06-20", "metric": "model: generic" },
+            { "text": "Silent acceleration, zero gas stations, full charge overnight. The future is now. ⚡", "source": "AI influencer post", "date": "2026-06-19", "metric": "synthetic" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Amazon",
+      "slug": "amazon",
+      "emoji": "📦",
+      "category": "E-Commerce & Cloud",
+      "color": "#ff9900",
+      "voices": {
+        "official": {
+          "sentiment": "confident",
+          "summary": "Customer-obsessed and convenience-led — selection, speed, and reliability.",
+          "tone_tags": ["Customer-obsessed", "Convenient", "Fast", "Scale"],
+          "samples": [
+            { "text": "Earth's most customer-centric company.", "source": "Brand mission", "date": "2026-04-10", "metric": "mission statement" },
+            { "text": "It's here. Delivered today, because waiting is overrated.", "source": "Instagram", "date": "2026-06-05", "metric": "27K likes" }
+          ]
+        },
+        "consumer": {
+          "sentiment": "mixed",
+          "summary": "Convenience is unmatched; concerns about quality, counterfeits, and labor.",
+          "tone_tags": ["Convenient", "Indispensable", "Quality-wary", "Ethics-questioning"],
+          "samples": [
+            { "text": "Prime delivery has genuinely changed how I shop. Can't go back.", "source": "Review · social", "date": "2026-06-08", "metric": "4.1K likes" },
+            { "text": "Half the reviews are fake and the 'brand' has 7 random letters.", "source": "X / Twitter", "date": "2026-06-13", "metric": "9.2K likes" }
+          ]
+        },
+        "ai": {
+          "sentiment": "neutral",
+          "summary": "AI frames Amazon as the e-commerce/cloud benchmark; content emphasizes convenience.",
+          "tone_tags": ["Benchmark", "Convenience", "Scale"],
+          "samples": [
+            { "text": "Amazon is commonly cited as a leader in e-commerce logistics and cloud infrastructure.", "source": "LLM brand summary", "date": "2026-06-20", "metric": "model: generic" },
+            { "text": "Ordered at midnight, on my doorstep by lunch. How did we live before this? 📦", "source": "AI influencer post", "date": "2026-06-19", "metric": "synthetic" }
+          ]
+        }
+      }
+    }
+  ]
+}

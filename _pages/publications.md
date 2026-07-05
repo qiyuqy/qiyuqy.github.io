@@ -6,7 +6,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-My research examines how novel technologies and digital environments reshape firm strategy, consumer behavior, and broader market outcomes, using large-scale data.
+My research examines how novel technologies and digital environments reshape firm strategy, consumer behavior, and market outcomes, using large-scale data and empirical models. My most recent work centers on two themes. The first is **influencer marketing**: I study how the intermediaries and management systems behind creators shape the volume, variety, and quality of the content they produce, and how platform policies—from monetization to content embargoes—alter what creators supply. The second is **artificial intelligence in digital markets**: I study how AI-generated and AI-assisted content affects the quantity and quality of user contributions, and more broadly how AI is changing the way content is created, evaluated, and consumed on online platforms.
 
 ## Publications
 

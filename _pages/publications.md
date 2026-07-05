@@ -45,18 +45,6 @@ My research examines how novel technologies and digital environments reshape fir
   <li class="pub-item">
     <div class="pub-figure--placeholder" aria-hidden="true"></div>
     <div class="pub-cite">
-      <p><span class="pub-title">The Dark Side of Adding a Category: Will Existing Ones &ldquo;Pay the Price&rdquo;</span> (with Ron Berman and Eric T. Bradlow)</p>
-    </div>
-  </li>
-  <li class="pub-item">
-    <div class="pub-figure--placeholder" aria-hidden="true"></div>
-    <div class="pub-cite">
-      <p><span class="pub-title">Does Privatization Lead to Lower Prices? Evidence from the State of Washington&rsquo;s Liquor Markets</span> (with Ron Berman and Eric T. Bradlow)</p>
-    </div>
-  </li>
-  <li class="pub-item">
-    <div class="pub-figure--placeholder" aria-hidden="true"></div>
-    <div class="pub-cite">
       <p><span class="pub-title">From Aversion to Activation: The Impact of AI-Posted Content on User Contribution Quantity and Quality</span> (with Peng Luo, Ying Chen, Banggang Wu, and Yongqiang Li)</p>
     </div>
   </li>
@@ -64,17 +52,6 @@ My research examines how novel technologies and digital environments reshape fir
     <div class="pub-figure--placeholder" aria-hidden="true"></div>
     <div class="pub-cite">
       <p><span class="pub-title">When Crowdfunding Meets InDemand: A Dynamic Model</span> (with Haoyu Yuan, Dandan Qiao, and Qiang Wei)</p>
-    </div>
-  </li>
-</ul>
-
-## Selected Work in Progress
-
-<ul class="pub-list">
-  <li class="pub-item">
-    <div class="pub-figure--placeholder" aria-hidden="true"></div>
-    <div class="pub-cite">
-      <p><span class="pub-title">Search Advertising for Product Portfolios</span> (with Yichen Wang, Sandeep R. Chandukala, and Ernst Osinga)</p>
     </div>
   </li>
 </ul>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="Review embargoes obscuring true game quality in the gaming industry">
+  <defs>
+    <linearGradient id="eg-lock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cf8b97"/>
+      <stop offset="1" stop-color="#a86270"/>
+    </linearGradient>
+    <filter id="eg-sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#a86270" flood-opacity="0.18"/>
+    </filter>
+    <filter id="eg-blur"><feGaussianBlur stdDeviation="2.4"/></filter>
+  </defs>
+
+  <rect width="300" height="200" rx="18" fill="#faf0f2"/>
+  <rect x="0.75" y="0.75" width="298.5" height="198.5" rx="17.25" fill="none" stroke="#ecccd3" stroke-width="1.5"/>
+
+  <!-- game console / controller -->
+  <g filter="url(#eg-sh)">
+    <path d="M48 86 c-12 0 -21 10 -23 26 c-2 16 5 26 14 26 c7 0 9 -7 18 -7 h26 c9 0 11 7 18 7 c9 0 16 -10 14 -26 c-2 -16 -11 -26 -23 -26 z"
+          fill="#ffffff"/>
+  </g>
+  <path d="M48 86 c-12 0 -21 10 -23 26 c-2 16 5 26 14 26 c7 0 9 -7 18 -7 h26 c9 0 11 7 18 7 c9 0 16 -10 14 -26 c-2 -16 -11 -26 -23 -26 z"
+        fill="none" stroke="#c17b88" stroke-width="2.4"/>
+  <!-- d-pad -->
+  <line x1="44" y1="112" x2="44" y2="126" stroke="#a86270" stroke-width="4" stroke-linecap="round"/>
+  <line x1="37" y1="119" x2="51" y2="119" stroke="#a86270" stroke-width="4" stroke-linecap="round"/>
+  <!-- buttons -->
+  <circle cx="92" cy="112" r="4" fill="#8aa896"/>
+  <circle cx="103" cy="123" r="4" fill="#7e89ad"/>
+  <circle cx="92" cy="134" r="4" fill="#d9b48f"/>
+
+  <!-- embargo: lock with calendar -->
+  <g filter="url(#eg-sh)">
+    <rect x="130" y="96" width="50" height="44" rx="9" fill="url(#eg-lock)"/>
+  </g>
+  <path d="M139 96 v-9 a16 16 0 0 1 32 0 v9" fill="none" stroke="#a86270" stroke-width="4"/>
+  <!-- calendar face on the lock -->
+  <rect x="143" y="106" width="24" height="24" rx="3" fill="#fbe7eb"/>
+  <rect x="143" y="106" width="24" height="7" rx="3" fill="#e7b9c1"/>
+  <g fill="#b06778">
+    <rect x="147" y="117" width="4" height="4" rx="1"/>
+    <rect x="153" y="117" width="4" height="4" rx="1"/>
+    <rect x="159" y="117" width="4" height="4" rx="1"/>
+    <rect x="147" y="123" width="4" height="4" rx="1"/>
+    <rect x="153" y="123" width="4" height="4" rx="1"/>
+  </g>
+
+  <!-- arrow -->
+  <line x1="190" y1="118" x2="214" y2="118" stroke="#a86270" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="214,111 228,118 214,125" fill="#a86270"/>
+
+  <!-- obscured quality: rating panel blurred with question mark -->
+  <g filter="url(#eg-sh)">
+    <rect x="232" y="62" width="56" height="100" rx="12" fill="#ffffff"/>
+  </g>
+  <g filter="url(#eg-blur)">
+    <g transform="translate(260,92)" fill="#d9b48f">
+      <path d="M0 -14 l4 9 9.5 1.2 -7 6.6 1.8 9.4 -8.3 -4.5 -8.3 4.5 1.8 -9.4 -7 -6.6 9.5 -1.2 z"/>
+    </g>
+    <g stroke="#e3cdb3" stroke-width="5" stroke-linecap="round">
+      <line x1="244" y1="120" x2="276" y2="120"/>
+      <line x1="244" y1="134" x2="270" y2="134"/>
+      <line x1="244" y1="148" x2="266" y2="148"/>
+    </g>
+  </g>
+  <!-- question mark badge: quality obfuscated -->
+  <circle cx="260" cy="112" r="17" fill="#a86270" opacity="0.92"/>
+  <text x="260" y="120" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#ffffff">?</text>
+</svg>

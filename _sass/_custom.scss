@@ -1,0 +1,316 @@
+/* ==========================================================================
+   CUSTOM - Dusty Rose & Cream
+   Clean, modern, light personal-site polish layered over Minimal Mistakes.
+   ========================================================================== */
+
+/* Soft warm background + smoother type rendering */
+body {
+  background-color: $cream;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.1px;
+}
+
+/* Gentle, consistent link styling with an animated underline */
+a {
+  color: $deep-rose;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: mix(#000, $deep-rose, 18%);
+  }
+}
+
+.page__content {
+  p, li {
+    line-height: 1.7;
+  }
+
+  /* keep inline citation links readable: subtle underline on hover only */
+  p a,
+  li a {
+    background-image: linear-gradient(transparent calc(100% - 1px), rgba($dusty-rose, 0.5) 1px);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease-in-out, color 0.2s ease-in-out;
+
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
+}
+
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+.masthead {
+  background-color: rgba($cream, 0.92);
+  -webkit-backdrop-filter: saturate(160%) blur(6px);
+          backdrop-filter: saturate(160%) blur(6px);
+  border-bottom: 1px solid $border-color;
+  box-shadow: 0 1px 12px rgba($soft-charcoal, 0.04);
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    color: $soft-charcoal;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      background-color: $dusty-rose;
+      transition: width 0.25s ease-in-out;
+    }
+
+    &:hover {
+      color: $deep-rose;
+      &:before { width: 100%; }
+    }
+  }
+
+  .visible-links .masthead__menu-item--lg a {
+    font-weight: 700;
+  }
+
+  button {
+    color: $deep-rose;
+  }
+}
+
+/* ==========================================================================
+   HOME / AUTHOR PROFILE CARD
+   ========================================================================== */
+.author__avatar {
+  @include breakpoint($large) {
+    text-align: center;
+  }
+
+  img {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 26px rgba($deep-rose, 0.18),
+                0 0 0 1px rgba($dusty-rose, 0.25);
+
+    @include breakpoint($large) {
+      padding: 0;
+    }
+  }
+}
+
+.author__content {
+  @include breakpoint($large) {
+    text-align: center;
+  }
+}
+
+.sidebar .author__name,
+.author__name {
+  font-weight: 700;
+  font-size: $type-size-3;
+  color: $soft-charcoal;
+  letter-spacing: 0.2px;
+}
+
+.author__bio {
+  color: mix(#fff, $soft-charcoal, 22%);
+  font-size: $type-size-5;
+  line-height: 1.5;
+
+  /* subtle accent divider under the bio */
+  @include breakpoint($large) {
+    padding-bottom: 1.1em;
+    border-bottom: 2px solid rgba($dusty-rose, 0.35);
+  }
+}
+
+/* social / contact links */
+.author__urls {
+  @include breakpoint($large) {
+    margin-top: 0.6em;
+  }
+
+  a {
+    color: mix(#000, $soft-charcoal, 5%);
+    border-radius: 6px;
+    padding: 3px 6px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+    &:hover {
+      color: $deep-rose;
+      background-color: $blush;
+      text-decoration: none;
+    }
+
+    i, .ai {
+      color: $dusty-rose;
+    }
+  }
+}
+
+/* Hide the non-functional "Follow" button from the theme */
+.author__urls-wrapper > button.btn--inverse {
+  display: none;
+}
+
+/* Lead paragraph on the home page (first paragraph) gets a touch more presence */
+.page__content > p:first-of-type {
+  font-size: 1.08em;
+  color: mix(#000, $soft-charcoal, 4%);
+}
+
+/* ==========================================================================
+   HEADINGS / SECTION TITLES
+   ========================================================================== */
+.page__content {
+  h1, h2, h3 {
+    color: $soft-charcoal;
+  }
+
+  h2 {
+    position: relative;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid $border-color;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 56px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: $dusty-rose;
+    }
+  }
+}
+
+/* ==========================================================================
+   RESEARCH / PUBLICATIONS LIST  (graphical abstracts to the left)
+   ========================================================================== */
+.pub-list {
+  list-style: none;
+  margin: 1.5em 0 2.5em;
+  padding: 0;
+}
+
+.pub-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4em;
+  padding: 1.25em 0;
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  /* graphical-abstract figure */
+  .pub-figure {
+    flex: 0 0 168px;
+    width: 168px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba($deep-rose, 0.10),
+                0 0 0 1px rgba($dusty-rose, 0.12);
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba($deep-rose, 0.18),
+                  0 0 0 1px rgba($dusty-rose, 0.20);
+    }
+  }
+
+  /* slim accent marker for entries without a figure, keeps text aligned */
+  .pub-figure--placeholder {
+    flex: 0 0 168px;
+    width: 168px;
+    align-self: stretch;
+    position: relative;
+    box-shadow: none;
+    background: transparent;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3px;
+      border-radius: 3px;
+      background: linear-gradient(to bottom,
+                  rgba($dusty-rose, 0.55),
+                  rgba($dusty-rose, 0.12));
+    }
+  }
+
+  .pub-cite {
+    flex: 1 1 auto;
+    align-self: center;
+
+    p { margin-bottom: 0.4em; line-height: 1.6; }
+
+    .pub-title { font-weight: 700; color: $soft-charcoal; }
+
+    .pub-note {
+      display: inline-block;
+      margin-top: 0.35em;
+      font-size: $type-size-6;
+      color: $deep-rose;
+      background: $blush;
+      padding: 2px 10px;
+      border-radius: 999px;
+    }
+
+    .pub-sub {
+      font-size: 0.95em;
+      color: mix(#fff, $soft-charcoal, 28%);
+    }
+  }
+
+  /* stack on small screens */
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 0.9em;
+
+    .pub-figure,
+    .pub-figure--placeholder {
+      flex-basis: auto;
+      width: 60%;
+      max-width: 200px;
+    }
+    .pub-figure--placeholder { display: none; }
+    .pub-cite { align-self: flex-start; }
+  }
+}
+
+/* ==========================================================================
+   BUTTONS / MISC
+   ========================================================================== */
+.btn--inverse {
+  border-color: $dusty-rose;
+  color: $deep-rose;
+
+  &:hover {
+    background-color: $dusty-rose;
+    color: #fff;
+  }
+}
+
+.page__footer {
+  background-color: #fff;
+  border-top: 1px solid $border-color;
+}

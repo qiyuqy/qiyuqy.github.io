@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="Platform monetization muting the supply of sustainability content">
+  <defs>
+    <linearGradient id="mm-coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c98f"/>
+      <stop offset="1" stop-color="#cf8b97"/>
+    </linearGradient>
+    <linearGradient id="mm-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a7c4b0"/>
+      <stop offset="1" stop-color="#7c9885"/>
+    </linearGradient>
+    <filter id="mm-sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#a86270" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="300" height="200" rx="18" fill="#faf0f2"/>
+  <rect x="0.75" y="0.75" width="298.5" height="198.5" rx="17.25" fill="none" stroke="#ecccd3" stroke-width="1.5"/>
+
+  <!-- monetization policy: stacked coins -->
+  <g filter="url(#mm-sh)">
+    <ellipse cx="58" cy="118" rx="30" ry="11" fill="#c9a273"/>
+    <rect x="28" y="100" width="60" height="18" fill="#d9b480"/>
+    <ellipse cx="58" cy="100" rx="30" ry="11" fill="#e3c489"/>
+    <rect x="28" y="84" width="60" height="18" fill="#dcb87f"/>
+    <ellipse cx="58" cy="84" rx="30" ry="11" fill="url(#mm-coin)"/>
+  </g>
+  <text x="58" y="91" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#a86270">$</text>
+  <text x="58" y="150" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#9c8a6a">monetization</text>
+
+  <!-- arrow with mute slash -->
+  <line x1="98" y1="100" x2="128" y2="100" stroke="#a86270" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="128,93 142,100 128,107" fill="#a86270"/>
+  <!-- mute symbol over arrow -->
+  <g transform="translate(115,100)">
+    <circle r="13" fill="#ffffff" filter="url(#mm-sh)"/>
+    <circle r="13" fill="none" stroke="#b06778" stroke-width="2.5"/>
+    <path d="M-6 -3 h4 l5 -4 v14 l-5 -4 h-4 z" fill="#b06778"/>
+    <line x1="-9" y1="-9" x2="9" y2="9" stroke="#b06778" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- sustainability content feed, supply declining -->
+  <g filter="url(#mm-sh)">
+    <rect x="156" y="44" width="98" height="112" rx="13" fill="#ffffff"/>
+  </g>
+  <!-- leaf -->
+  <g transform="translate(186,78)">
+    <path d="M0 22 C-14 14 -16 -6 6 -16 C 10 6 -2 18 -10 20 C 2 12 6 -2 4 -12 C 14 -2 16 14 0 22 Z"
+          fill="url(#mm-leaf)"/>
+    <path d="M4 -12 C 0 0 -6 12 -10 20" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.7"/>
+  </g>
+  <!-- declining content lines (volume shrinking) -->
+  <rect x="170" y="108" width="70" height="6" rx="3" fill="#bcd0c2"/>
+  <rect x="170" y="120" width="50" height="6" rx="3" fill="#d2e0d6"/>
+  <rect x="170" y="132" width="30" height="6" rx="3" fill="#e3ece5"/>
+  <rect x="170" y="144" width="16" height="6" rx="3" fill="#eef4f0"/>
+
+  <!-- downward supply trend arrow -->
+  <g transform="translate(272,52)">
+    <line x1="0" y1="0" x2="0" y2="92" stroke="#9aa6ad" stroke-width="3" stroke-linecap="round"/>
+    <polyline points="-7,80 0,94 7,80" fill="none" stroke="#9aa6ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

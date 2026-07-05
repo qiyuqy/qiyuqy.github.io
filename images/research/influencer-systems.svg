@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="Influencer management systems shaping content volume and variety">
+  <defs>
+    <linearGradient id="im-hub" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cf8b97"/>
+      <stop offset="1" stop-color="#a86270"/>
+    </linearGradient>
+    <filter id="im-sh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#a86270" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="300" height="200" rx="18" fill="#faf0f2"/>
+  <rect x="0.75" y="0.75" width="298.5" height="198.5" rx="17.25" fill="none" stroke="#ecccd3" stroke-width="1.5"/>
+
+  <!-- links influencers -> hub -->
+  <g stroke="#d9a7b0" stroke-width="2.4" stroke-linecap="round">
+    <line x1="60" y1="52" x2="120" y2="100"/>
+    <line x1="48" y1="100" x2="120" y2="100"/>
+    <line x1="60" y1="148" x2="120" y2="100"/>
+  </g>
+
+  <!-- influencer avatars -->
+  <g>
+    <g transform="translate(44,52)">
+      <circle r="17" fill="#ffffff" filter="url(#im-sh)"/>
+      <circle r="17" fill="none" stroke="#c17b88" stroke-width="2"/>
+      <circle cy="-4.5" r="5" fill="#c17b88"/>
+      <path d="M-9 9 a9 7.5 0 0 1 18 0 z" fill="#c17b88"/>
+    </g>
+    <g transform="translate(32,100)">
+      <circle r="17" fill="#ffffff" filter="url(#im-sh)"/>
+      <circle r="17" fill="none" stroke="#c17b88" stroke-width="2"/>
+      <circle cy="-4.5" r="5" fill="#c17b88"/>
+      <path d="M-9 9 a9 7.5 0 0 1 18 0 z" fill="#c17b88"/>
+    </g>
+    <g transform="translate(44,148)">
+      <circle r="17" fill="#ffffff" filter="url(#im-sh)"/>
+      <circle r="17" fill="none" stroke="#c17b88" stroke-width="2"/>
+      <circle cy="-4.5" r="5" fill="#c17b88"/>
+      <path d="M-9 9 a9 7.5 0 0 1 18 0 z" fill="#c17b88"/>
+    </g>
+  </g>
+
+  <!-- management system hub: dashboard console -->
+  <g filter="url(#im-sh)">
+    <rect x="98" y="72" width="56" height="56" rx="14" fill="url(#im-hub)"/>
+  </g>
+  <!-- gear -->
+  <g transform="translate(126,100)" fill="#fbe7eb">
+    <circle r="11" fill="none" stroke="#fbe7eb" stroke-width="4"/>
+    <circle r="4.5" fill="#a86270"/>
+    <g stroke="#fbe7eb" stroke-width="4" stroke-linecap="round">
+      <line x1="0" y1="-15" x2="0" y2="-19"/>
+      <line x1="0" y1="15" x2="0" y2="19"/>
+      <line x1="-15" y1="0" x2="-19" y2="0"/>
+      <line x1="15" y1="0" x2="19" y2="0"/>
+    </g>
+  </g>
+
+  <!-- arrow to output -->
+  <line x1="168" y1="100" x2="194" y2="100" stroke="#a86270" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="194,93 208,100 194,107" fill="#a86270"/>
+
+  <!-- content output: variety of formats, more volume -->
+  <!-- video tile -->
+  <g filter="url(#im-sh)">
+    <rect x="218" y="40" width="58" height="32" rx="7" fill="#c17b88"/>
+  </g>
+  <polygon points="241,49 241,63 252,56" fill="#ffffff"/>
+  <!-- image tile -->
+  <g filter="url(#im-sh)">
+    <rect x="226" y="80" width="58" height="32" rx="7" fill="#8aa896"/>
+  </g>
+  <circle cx="238" cy="90" r="3.5" fill="#ffffff"/>
+  <path d="M232 106 l9 -10 7 7 5 -4 8 7 z" fill="#ffffff"/>
+  <!-- text tile -->
+  <g filter="url(#im-sh)">
+    <rect x="218" y="120" width="58" height="32" rx="7" fill="#7e89ad"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round">
+    <line x1="227" y1="130" x2="267" y2="130"/>
+    <line x1="227" y1="138" x2="259" y2="138"/>
+    <line x1="227" y1="146" x2="251" y2="146"/>
+  </g>
+</svg>

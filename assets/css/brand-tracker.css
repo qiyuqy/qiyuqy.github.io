@@ -148,6 +148,20 @@
   border: 1px solid color-mix(in srgb, var(--c) 22%, #fff);
 }
 
+.bt-metrics { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.85rem; }
+.bt-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--c) 6%, #fafafa);
+  border: 1px solid color-mix(in srgb, var(--c) 15%, #eee);
+}
+.bt-metric__value { font-size: 0.86rem; font-weight: 700; color: #222; }
+.bt-metric__label { font-size: 0.7rem; color: #888; }
+.bt-metric__label a { color: var(--c); text-decoration: none; border-bottom: 1px dotted currentColor; }
+
 .bt-samples { display: flex; flex-direction: column; gap: 0.6rem; }
 .bt-sample {
   margin: 0;
@@ -158,7 +172,9 @@
 }
 .bt-sample blockquote { margin: 0 0 0.4rem; font-size: 0.86rem; color: #2a2a2a; font-style: italic; }
 .bt-sample figcaption { display: flex; flex-direction: column; gap: 0.1rem; }
+.bt-sample__attr { font-size: 0.72rem; color: #777; }
 .bt-sample__src { font-size: 0.74rem; font-weight: 600; color: #555; }
+.bt-sample__src a { color: var(--c); text-decoration: none; border-bottom: 1px dotted currentColor; }
 .bt-sample__meta { font-size: 0.7rem; color: #aaa; }
 
 .bt-empty, .bt-error { color: #888; font-size: 0.88rem; padding: 0.5rem 0; }
@@ -169,6 +185,7 @@
   .bt-sentiment { background: #f0f0f0; }
   .bt-tag { background: #f3f3f3; border-color: #e3e3e3; }
   .bt-sample { border-left-color: #ddd; }
+  .bt-metric { background: #fafafa; border-color: #eee; }
 }
 
 @media (max-width: 720px) {

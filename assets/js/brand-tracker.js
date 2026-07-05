@@ -87,10 +87,11 @@
     var badge = el("bt-meta");
     if (!badge) return;
     var live = DATA_SOURCE.mode === "api";
+    var label = live ? "Live data" : (meta.is_demo ? "Demo data" : "Curated public data");
     var parts = [];
     parts.push(
-      '<span class="bt-pill ' + (live ? "bt-pill--live" : "bt-pill--demo") + '">' +
-      (live ? "Live data" : "Demo data") + "</span>"
+      '<span class="bt-pill ' + (live || !meta.is_demo ? "bt-pill--live" : "bt-pill--demo") + '">' +
+      label + "</span>"
     );
     if (meta.generated_at) {
       parts.push('<span class="bt-meta-stamp">Updated ' + escapeHtml(meta.generated_at) + "</span>");
@@ -183,16 +184,34 @@
     board.innerHTML = header + grid;
   }
 
+  function sourceLink(name, url) {
+    var safe = escapeHtml(name || "");
+    if (!url) return safe;
+    return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' + safe + "</a>";
+  }
+
   function voiceColumn(key, type, voice) {
     var tags = (voice.tone_tags || []).map(function (tag) {
       return '<span class="bt-tag">' + escapeHtml(tag) + "</span>";
+    }).join("");
+
+    var metrics = (voice.metrics || []).map(function (m) {
+      return (
+        '<div class="bt-metric">' +
+        '<span class="bt-metric__value">' + escapeHtml(m.value || "") + "</span>" +
+        '<span class="bt-metric__label">' + escapeHtml(m.label || "") +
+        (m.source ? " · " + sourceLink(m.source, m.source_url) : "") +
+        "</span></div>"
+      );
     }).join("");
 
     var samples = (voice.samples || []).map(function (s) {
       return (
         '<figure class="bt-sample">' +
         '<blockquote>' + escapeHtml(s.text) + "</blockquote>" +
-        '<figcaption><span class="bt-sample__src">' + escapeHtml(s.source || "") + "</span>" +
+        "<figcaption>" +
+        (s.attribution ? '<span class="bt-sample__attr">' + escapeHtml(s.attribution) + "</span>" : "") +
+        '<span class="bt-sample__src">' + sourceLink(s.source, s.source_url) + "</span>" +
         '<span class="bt-sample__meta">' +
         escapeHtml(s.date || "") +
         (s.metric ? ' · ' + escapeHtml(s.metric) : "") +
@@ -209,6 +228,7 @@
       "</header>" +
       '<p class="bt-col__desc">' + escapeHtml(type.description || "") + "</p>" +
       (voice.summary ? '<p class="bt-col__summary">' + escapeHtml(voice.summary) + "</p>" : "") +
+      (metrics ? '<div class="bt-metrics">' + metrics + "</div>" : "") +
       (tags ? '<div class="bt-tags">' + tags + "</div>" : "") +
       '<div class="bt-samples">' + (samples || '<p class="bt-empty">No samples yet.</p>') + "</div>" +
       "</section>"

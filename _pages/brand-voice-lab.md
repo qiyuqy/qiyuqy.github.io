@@ -55,12 +55,16 @@ Science*](https://pubsonline.informs.org/doi/10.1287/mksc.2023.0454)) — though
 caveats about preference alignment ([Goli & Singh 2024, *Marketing
 Science*](https://pubsonline.informs.org/doi/10.1287/mksc.2023.0306)) and the causal validity
 of LLM-simulated experiments ([Gui & Toubia 2025](https://arxiv.org/abs/2312.15524)).
-Scaling the consumer column beyond indices to raw social/review text would use
-transformer-based sentiment models — the field standard is SiEBERT
+Scaling the consumer column beyond indices to raw consumer content would combine two
+modalities. For text, transformer-based sentiment models — the field standard is SiEBERT
 ([Hartmann, Heitmann, Siebert & Schamp 2023, *IJRM*](https://www.sciencedirect.com/science/article/pii/S0167811622000477)) —
 or zero-shot LLM sentiment classification, which now matches fine-tuned models
 ([Krugmann & Hartmann 2024](https://link.springer.com/article/10.1007/s40547-024-00143-4)),
 with attribute-level extensions ([Chakraborty, Kim & Sudhir 2022, *JMR*](https://journals.sagepub.com/doi/abs/10.1177/00222437211052500)).
+For images — where much of the consumer voice now lives — the "visual listening in"
+approach mines consumer-posted photos with deep learning (BrandImageNet) to measure the
+brand attributes consumers actually portray, validated against perception surveys
+([Liu, Dzyabura & Mizik 2020, *Marketing Science*](https://pubsonline.informs.org/doi/10.1287/mksc.2020.1226)).
 
 Selected Recent Literature
 -----
@@ -75,8 +79,9 @@ Selected Recent Literature
 - Toubia, Gui, Peng, Merlau, Li & Chen (2025). [Twin-2K-500: A Dataset for Building Digital Twins](https://arxiv.org/abs/2505.17479). Working paper + public dataset.
 - Stromberg, Moe, Reutterer & Schweidel (2025). [Blind Spots in Broad Strokes: Caveats for the Use of LLMs in Marketing Research](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5145114). Working paper.
 
-**Measuring the consumer voice from text at scale**
+**Measuring the consumer voice at scale (text & images)**
 
+- Liu, Dzyabura & Mizik (2020). [Visual Listening In: Extracting Brand Image Portrayed on Social Media](https://pubsonline.informs.org/doi/10.1287/mksc.2020.1226). *Marketing Science*, 39(4).
 - Hartmann, Heitmann, Siebert & Schamp (2023). [More than a Feeling: Accuracy and Application of Sentiment Analysis](https://www.sciencedirect.com/science/article/pii/S0167811622000477). *IJRM*, 40(1).
 - Krugmann & Hartmann (2024). [Sentiment Analysis in the Age of Generative AI](https://link.springer.com/article/10.1007/s40547-024-00143-4). *Customer Needs and Solutions*, 11.
 - Chakraborty, Kim & Sudhir (2022). [Attribute Sentiment Scoring with Online Text Reviews](https://journals.sagepub.com/doi/abs/10.1177/00222437211052500). *JMR*, 59(3).

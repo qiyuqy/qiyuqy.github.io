@@ -48,10 +48,5 @@ My research examines how novel technologies and digital environments reshape fir
       <p><span class="pub-title">From Aversion to Activation: The Impact of AI-Posted Content on User Contribution Quantity and Quality</span> (with Peng Luo, Ying Chen, Banggang Wu, and Yongqiang Li)</p>
     </div>
   </li>
-  <li class="pub-item">
-    <div class="pub-figure--placeholder" aria-hidden="true"></div>
-    <div class="pub-cite">
-      <p><span class="pub-title">When Crowdfunding Meets InDemand: A Dynamic Model</span> (with Haoyu Yuan, Dandan Qiao, and Qiang Wei)</p>
-    </div>
   </li>
 </ul>

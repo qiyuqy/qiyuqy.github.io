@@ -171,7 +171,8 @@
       '<span class="bt-board__emoji" aria-hidden="true">' + escapeHtml(brand.emoji || "•") + "</span>" +
       "<div><h3>" + escapeHtml(brand.name) + "</h3>" +
       '<span class="bt-board__cat">' + escapeHtml(brand.category || "") + "</span></div>" +
-      "</div>";
+      "</div>" +
+      gapStrip(brand.voice_gap);
 
     var grid = '<div class="bt-cols" data-count="' + cols.length + '">' +
       cols.map(function (key) {
@@ -182,6 +183,43 @@
       "</div>";
 
     board.innerHTML = header + grid;
+  }
+
+  function signed(n) { return (n > 0 ? "+" : "") + n; }
+
+  // Ordinal voice-valence coding (−2…+2). Official is anchored at +2 by
+  // construction (self-presentation); the informative quantity is the gap.
+  function gapStrip(gap) {
+    if (!gap) return "";
+    var spread = Math.abs((gap.official != null ? gap.official : 2) - gap.consumer);
+    var label = spread >= 3 ? "large" : spread === 2 ? "moderate" : "small";
+    var chips = VOICE_ORDER.map(function (k) {
+      if (gap[k] == null) return "";
+      return '<span class="bt-gap__chip bt-gap__chip--' + k + '">' +
+        '<span class="bt-dot"></span>' + signed(gap[k]) + "</span>";
+    }).join("");
+    return (
+      '<div class="bt-gap">' +
+      '<span class="bt-gap__title">Voice valence</span>' + chips +
+      '<span class="bt-gap__spread bt-gap__spread--' + label + '">official–consumer gap: ' +
+      spread + " (" + label + ")</span>" +
+      (gap.note ? '<span class="bt-gap__note">' + escapeHtml(gap.note) + "</span>" : "") +
+      "</div>"
+    );
+  }
+
+  function attrBars(attributes) {
+    if (!attributes || !attributes.length) return "";
+    return '<div class="bt-attrs">' + attributes.map(function (a) {
+      var pct = Math.max(0, Math.min(10, a.score)) * 10;
+      return (
+        '<div class="bt-attr">' +
+        '<span class="bt-attr__name">' + escapeHtml(a.name) + "</span>" +
+        '<span class="bt-attr__track"><span class="bt-attr__fill" style="width:' + pct + '%"></span></span>' +
+        '<span class="bt-attr__val">' + escapeHtml(String(a.score)) + "</span>" +
+        "</div>"
+      );
+    }).join("") + "</div>";
   }
 
   function sourceLink(name, url) {
@@ -229,6 +267,7 @@
       '<p class="bt-col__desc">' + escapeHtml(type.description || "") + "</p>" +
       (voice.summary ? '<p class="bt-col__summary">' + escapeHtml(voice.summary) + "</p>" : "") +
       (metrics ? '<div class="bt-metrics">' + metrics + "</div>" : "") +
+      attrBars(voice.attributes) +
       (tags ? '<div class="bt-tags">' + tags + "</div>" : "") +
       '<div class="bt-samples">' + (samples || '<p class="bt-empty">No samples yet.</p>') + "</div>" +
       "</section>"

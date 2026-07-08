@@ -3,6 +3,7 @@
   --bt-official: #2563eb;
   --bt-consumer: #16a34a;
   --bt-ai: #9333ea;
+  --bt-surface: #ffffff;
   margin: 1.5em 0 2.5em;
   font-size: 0.95rem;
   line-height: 1.5;
@@ -130,13 +131,100 @@
 .bt-gap__spread--moderate { color: #97620d; }
 .bt-gap__note { flex-basis: 100%; color: #999; font-size: 0.74rem; }
 
-/* Attribute-rating bars (structured LLM elicitation) */
-.bt-attrs { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 0.85rem; }
-.bt-attr { display: flex; align-items: center; gap: 0.5rem; font-size: 0.74rem; }
-.bt-attr__name { flex: 0 0 4.6rem; color: #777; }
-.bt-attr__track { flex: 1; height: 6px; border-radius: 3px; background: #efefef; overflow: hidden; }
-.bt-attr__fill { display: block; height: 100%; border-radius: 3px; background: var(--c); opacity: 0.75; }
-.bt-attr__val { flex: 0 0 1.2rem; text-align: right; color: #999; font-variant-numeric: tabular-nums; }
+/* Overview: voice-valence dumbbell chart (doubles as brand navigation) */
+.bt-ov {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 1rem 1rem 0.8rem;
+  margin-bottom: 1.5rem;
+  background: var(--bt-surface, #fff);
+}
+.bt-ov__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.9rem; margin-bottom: 0.7rem; }
+.bt-ov__head h3 { margin: 0; font-size: 1rem; }
+.bt-ov__hint { font-size: 0.72rem; color: #999; }
+.bt-ov__legend { display: flex; gap: 0.7rem; margin-left: auto; font-size: 0.74rem; font-weight: 600; }
+.bt-ov__leg { display: inline-flex; align-items: center; gap: 0.3rem; }
+.bt-ov__leg .bt-dot { width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+.bt-ov__leg--official { color: var(--bt-official); }
+.bt-ov__leg--consumer { color: var(--bt-consumer); }
+.bt-ov__leg--ai { color: var(--bt-ai); }
+
+.bt-ov__row, .bt-ov__axisrow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+.bt-ov__row {
+  border: 0; background: none; cursor: pointer;
+  padding: 0.28rem 0.3rem; border-radius: 6px;
+  text-align: left; font: inherit; color: inherit;
+}
+.bt-ov__row:hover { background: rgba(127, 127, 127, 0.08); }
+.bt-ov__row.is-active { background: rgba(127, 127, 127, 0.12); }
+.bt-ov__label { flex: 0 0 8.2rem; font-size: 0.82rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bt-ov__plot { position: relative; flex: 1; height: 16px; }
+.bt-ov__axis { position: relative; flex: 1; height: 14px; font-size: 0.68rem; color: #999; }
+.bt-ov__tick { position: absolute; transform: translateX(-50%); font-variant-numeric: tabular-nums; }
+.bt-ov__grid { position: absolute; top: -2px; bottom: -2px; width: 1px; background: rgba(127, 127, 127, 0.18); }
+.bt-ov__link { position: absolute; top: 50%; height: 2px; margin-top: -1px; background: rgba(127, 127, 127, 0.45); border-radius: 1px; }
+.bt-ov__pt {
+  position: absolute; top: 50%; width: 10px; height: 10px;
+  transform: translate(-50%, -50%); border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--bt-surface, #fff);
+}
+.bt-ov__pt--official { background: var(--bt-official); width: 13px; height: 13px; }
+.bt-ov__pt--consumer { background: var(--bt-consumer); width: 9px; height: 9px; z-index: 2; }
+.bt-ov__pt--ai { background: var(--bt-ai); width: 8px; height: 8px; z-index: 3; box-shadow: 0 0 0 1.5px var(--bt-surface, #fff); }
+.bt-ov__gapval { flex: 0 0 2rem; text-align: right; font-size: 0.8rem; font-weight: 700; color: #777; font-variant-numeric: tabular-nums; }
+.bt-ov__gapval--head { font-size: 0.68rem; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Perception profile: paired attribute bars, brand vs comparison */
+.bt-profile {
+  --cmp-a: #0891b2;
+  --cmp-b: #c2410c;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.25rem;
+  max-width: 34rem;
+  background: var(--bt-surface, #fff);
+}
+.bt-profile__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1rem; margin-bottom: 0.5rem; }
+.bt-profile__head h4 { margin: 0; font-size: 0.92rem; }
+.bt-profile__head h4 span { font-weight: 400; font-size: 0.72rem; color: #999; margin-left: 0.3rem; }
+.bt-profile__cmp { margin-left: auto; font-size: 0.76rem; color: #777; }
+.bt-profile__cmp select {
+  font: inherit; color: inherit;
+  border: 1px solid #d7d7d7; border-radius: 6px;
+  padding: 0.15rem 0.35rem; background: var(--bt-surface, #fff);
+}
+.bt-profile__legend { display: flex; gap: 0.9rem; margin-bottom: 0.6rem; font-size: 0.76rem; font-weight: 600; }
+.bt-pr__leg { display: inline-flex; align-items: center; gap: 0.3rem; }
+.bt-pr__leg .bt-dot { width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+.bt-pr__leg--a { color: var(--cmp-a); }
+.bt-pr__leg--b { color: var(--cmp-b); }
+.bt-pr { display: flex; align-items: center; gap: 0.7rem; padding: 0.22rem 0; }
+.bt-pr__name { flex: 0 0 5.4rem; font-size: 0.76rem; color: #777; }
+.bt-pr__bars { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.bt-pr__track { display: flex; align-items: center; gap: 0.4rem; }
+.bt-pr__bar { display: block; height: 8px; border-radius: 0 4px 4px 0; background: var(--cmp-a); min-width: 2px; }
+.bt-pr__bar--b { background: var(--cmp-b); }
+.bt-pr__val { font-size: 0.7rem; color: #999; font-variant-numeric: tabular-nums; }
+
+/* Shared chart tooltip */
+.bt-tip {
+  position: fixed; z-index: 50;
+  max-width: 260px;
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+  background: rgba(30, 32, 36, 0.94); color: #f2f4f6;
+  font-size: 0.75rem; line-height: 1.35;
+  pointer-events: none; opacity: 0;
+  transition: opacity 0.1s ease;
+}
+.bt-tip.is-on { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .bt-tip { transition: none; } }
 
 .bt-cols { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
 .bt-cols[data-count="2"] { grid-template-columns: repeat(2, 1fr); }

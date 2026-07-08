@@ -26,6 +26,7 @@ Brand Voice Tracker
     <div id="bt-meta" class="bt-meta"></div>
   </div>
   <div id="bt-voice-filters" class="bt-voice-filters" role="group" aria-label="Toggle voice types"></div>
+  <div id="bt-overview" aria-label="Voice-gap overview chart"></div>
   <div id="bt-rail" class="bt-rail" role="tablist" aria-label="Brands"></div>
   <div id="bt-board" class="bt-board" aria-live="polite"></div>
 </div>

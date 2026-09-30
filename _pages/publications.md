@@ -25,7 +25,7 @@ My research examines how novel technologies and digital environments reshape fir
   <li class="pub-item pub-item--textonly">
     <div class="pub-cite">
       <p><span class="pub-title">More than Match-makers? How Do Influencer Management Systems Affect Content Volume and Variety</span> (with Ernst Osinga)</p>
-      <p><span class="pub-note">Conditionally accepted, <em>Journal of Marketing Research</em></span></p>
+      <p><span class="pub-note">Conditionally Accepted, <em>Journal of Marketing Research</em></span></p>
     </div>
   </li>
   <li class="pub-item pub-item--textonly">

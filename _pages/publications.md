@@ -25,7 +25,7 @@ My research examines how novel technologies and digital environments reshape fir
   <li class="pub-item pub-item--textonly">
     <div class="pub-cite">
       <p><span class="pub-title">More than Match-makers? How Do Influencer Management Systems Affect Content Volume and Variety</span> (with Ernst Osinga)</p>
-      <p><span class="pub-note">Revise &amp; resubmit, <em>Journal of Marketing Research</em></span></p>
+      <p><span class="pub-note">Conditionally accepted, <em>Journal of Marketing Research</em></span></p>
     </div>
   </li>
   <li class="pub-item pub-item--textonly">
@@ -41,6 +41,7 @@ My research examines how novel technologies and digital environments reshape fir
   <li class="pub-item pub-item--textonly">
     <div class="pub-cite">
       <p><span class="pub-title">From Aversion to Activation: The Impact of AI-Posted Content on User Contribution Quantity and Quality</span> (with Peng Luo, Ying Chen, Banggang Wu, and Yongqiang Li)</p>
+      <p><span class="pub-note">Major Revision, <em>Production and Operations Management</em></span></p>
     </div>
   </li>
 </ul>
